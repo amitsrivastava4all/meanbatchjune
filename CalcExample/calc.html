@@ -1,0 +1,44 @@
+<html>
+<head>
+   <!--<style>
+       #fr{
+           font-weight: bold;
+       }
+    </style>-->
+    <title>Calculator Example</title>
+    <script src="js/model.js"></script>
+    <script src="js/controller.js"></script>
+</head>
+<body>
+   <!--<p>Hello <span id="fr">Friends</span> , this is my Article</p>
+   <p>Hi Friends , this is my another article </p>-->
+    <table >
+        <tr>
+            <td><label for="firstNo">FirstNo</label></td>
+            <td><input id="firstNo" type="text" placeholder="Type First Number Here"></td>
+        </tr>
+        <tr>
+            <td><label for="secondNo">SecondNo</label></td>
+            <td><input id="secondNo" type="text" placeholder="Type Second Number Here"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+               <table cellspacing="2" cellpadding="10">
+                   <tr>
+                       <td><button data-operation="add">+</button></td>
+                       <td><button data-operation="subtract">-</button></td>
+                       <td><button data-operation="multiply">*</button></td>
+                       <td><button data-operation="divide">/</button></td>
+                   </tr>
+               </table>
+                
+            </td>
+        </tr>
+    </table>
+    <fieldset>
+        <legend>Result</legend>
+        <h1>Result is <span id="result"></span></h1>
+    </fieldset>
+    
+</body>
+</html>
