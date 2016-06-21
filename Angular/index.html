@@ -1,0 +1,17 @@
+<html>
+<head>
+    <script>
+    function show(){
+        var name = document.getElementById("txtName").value;
+        //document.getElementById("msg").innerHTML=name;
+        document.getElementsByTagName("p")[0].innerHTML=name;
+    }
+    </script>
+</head>
+<body>
+    <input type="text" id="txtName" placeholder="Type Name Here" onkeyup="show()">
+    <p >
+        
+    </p>
+</body>
+</html>
