@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Employee App</title>
+    <script src="libs/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="model.js"></script>
+    <script src="controller.js"></script>
+
+</head>
+<body ng-app="empapp" ng-controller="empctrl">
+    <input type="text" ng-model="name" placeholder="Type Emp Name">
+    <textarea  cols="30" ng-model="desc" rows="10"></textarea>
+    <input type="range" ng-model="rating" min="1" max="3">
+    <button ng-click="rateEmployee()">Rate Employee</button>
+    <hr>
+    <fieldset>
+        <legend>Comment List</legend>
+        <ul>
+            <li ng-repeat="comment in commentList" ng-click="giveData(comment)">
+                {{comment.name}} {{comment.desc}} {{comment.rating}}
+            </li>
+        </ul>
+    </fieldset>
+</body>
+</html>

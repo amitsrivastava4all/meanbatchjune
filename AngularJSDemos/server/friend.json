@@ -1,0 +1,7 @@
+[{"name":"Ram","phone":2222,"address":"Delhi"},
+{"name":"Tim","phone":3222,"address":"NewYork"},
+{"name":"Kim","phone":4222,"address":"London"},
+{"name":"Rim","phone":5222,"address":"Mumbai"},
+ {"name":"Sim","phone":6222,"address":"Delhi"},
+ {"name":"Jim","phone":7222,"address":"London"}
+]
