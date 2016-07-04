@@ -1,0 +1,71 @@
+<!-- Greet Example with AngularJS -->
+<html ng-app>
+<head>
+    <script src="js/angular.min.js"></script>
+    <style>
+/*
+        .outer{
+            border-color: red;
+            border-width: 2px;
+            border-style: solid;
+        }
+        .box{
+            
+            border-color: blue;
+            border-width: 2px;
+            border-style: solid;
+        
+        }
+*/
+    </style>
+</head>
+<body>
+  <input type="text" ng-model="txtName">
+   <label>Click me: <input type="checkbox" ng-model="checked" ng-init="checked=true" /></label><br/>
+   
+   <div  ng-init="data=[{'name':'Abcd','price':2222},{'name':'Xyz','price':32222},{'name':'QQ','price':22222},{'name':'TT','price':12222}]">
+       <div class="outer" ng-repeat="obj in data" width="100%"  >
+        <div ng-if="($index+1)%3==0">
+           
+           <div style="clear:both">
+<!--                {{obj.name}} {{obj.price}}-->
+           </div>
+           <div class="box" style="float:left" width="30%">
+               {{obj.name}} {{obj.price}} &nbsp;&nbsp;
+           </div>
+           </div>
+           <div ng-if="($index+1)%3!=0">
+           <div class="box" style="float:left" width="30%">
+               {{obj.name}} {{obj.price}}&nbsp;&nbsp;
+           </div>
+           </div>
+       </div>  
+          
+          
+           
+   </div>
+   <br>
+Show when checked:
+Expression is {{10==10}}
+{{txtName=='amit'}}
+<span ng-if="txtName=='amit'" >
+  hello if
+</span>
+    <table>
+        <tr>
+            <td><label for="">FirstName</label></td>
+            <td><input ng-model="firstname" type="text" placeholder="Type First Name Here"></td>
+        </tr>
+        <tr>
+            <td><label for="">LastName</label></td>
+            <td><input ng-model="lastname" type="text" placeholder="Type Last Name Here"></td>
+        </tr>
+        <!--<tr>
+            <td colspan="2"><button>Greet</button></td>
+        </tr>-->
+    </table>
+    <div>
+        Welcome {{firstname}} &nbsp;{{lastname}}  <!-- this represent Binding -->
+    </div>
+</body>
+</html>
