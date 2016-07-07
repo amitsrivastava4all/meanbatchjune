@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="libs/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="js/values/urlvalues.js"></script>
+    <script src="js/models/factory.js"></script>
+    <script src="js/controllers/controller.js"></script>
+    <title>Server Side Call</title>
+</head>
+<body ng-app="myapp" ng-controller="friendCtrl">
+   <h1>Welcome to the  Friend Application</h1>
+   <button ng-click="loadFriends()">Load Friend</button>
+    <ul>
+        <li ng-repeat ="obj in result">
+            {{obj.name}} {{obj.phone}}  {{obj.address}}
+        </li>
+    </ul>
+    <h1>This is the Footer of This Application</h1>
+</body>
+</html>
