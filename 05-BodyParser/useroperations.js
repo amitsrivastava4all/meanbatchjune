@@ -3,7 +3,7 @@ addNewUser:function(uid, pwd,uname,res){
     var userSchema = require("./userschema.js");
     console.log("UserSchema is "+userSchema);
     console.log("Typeof UserSchema is ",typeof userSchema);
-var user = new userSchema({userid: uid, password: pwd,"username":uname,"city":'Delhi'}); 
+var user = new userSchema({userid: uid, password: pwd,"username":uname}); 
     console.log("************User Object ",user);
 
 //userSchema.update(

@@ -34,10 +34,10 @@
     <h1>Welcome User</h1>
   
     <input type="text" placeholder="Type Name to Search"  ng-model="user">
-    {{data}}
+    
     <ul>
-        <li ng-repeat="d in data">
-            Data is  {{d.uid}} {{d.name}}
+        <li ng-repeat="d in data|filter:user">
+              {{d.userid}} {{d.username}}
         </li>
     </ul>
 
